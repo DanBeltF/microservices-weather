@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
  *
  * @author 2104784
  */
-@Service("Alpha")
+@Service
 public class WeatherInMemoryPersistence implements WeatherPersistence{
 
     @Override
@@ -49,7 +49,7 @@ public class WeatherInMemoryPersistence implements WeatherPersistence{
                 response.append(inputLine);
             }
             in.close();
-
+            System.out.println(response.toString());
             return response.toString();
         } else {
             return "GET request not worked";

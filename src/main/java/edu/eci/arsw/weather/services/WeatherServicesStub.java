@@ -19,7 +19,6 @@ import org.springframework.stereotype.Service;
 public class WeatherServicesStub implements WeatherServices{
 
     @Autowired
-    @Qualifier("Alpha")
     WeatherPersistence wp;
     
     @Override
