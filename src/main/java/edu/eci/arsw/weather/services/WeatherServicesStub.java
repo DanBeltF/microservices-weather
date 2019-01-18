@@ -22,7 +22,7 @@ public class WeatherServicesStub implements WeatherServices{
     WeatherPersistence wp;
     
     @Override
-    public String getClimaCiudad(String ciudad) throws IOException{
+    public String getClimaCiudad(String ciudad) throws WeatherServicesException{
         return wp.getClimaCiudad(ciudad);
     }
     

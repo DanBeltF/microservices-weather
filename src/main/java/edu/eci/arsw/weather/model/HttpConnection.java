@@ -3,16 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.eci.arsw.weather.persistence;
+package edu.eci.arsw.weather.model;
 
 import edu.eci.arsw.weather.services.WeatherServicesException;
 
 /**
  *
- * @author 2104784
+ * @author dbeltran
  */
-public interface WeatherPersistence {
+public interface HttpConnection {
     
     public String getClimaCiudad(String ciudad) throws WeatherServicesException;
-    
 }

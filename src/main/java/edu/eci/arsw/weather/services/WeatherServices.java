@@ -13,6 +13,6 @@ import java.io.IOException;
  */
 public interface WeatherServices {
     
-    public String getClimaCiudad(String ciudad) throws IOException;
+    public String getClimaCiudad(String ciudad) throws WeatherServicesException;
     
 }
